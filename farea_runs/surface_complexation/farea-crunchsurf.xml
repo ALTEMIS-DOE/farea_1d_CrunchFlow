@@ -22,7 +22,7 @@
 <process_kernels>
     <flow state="on" model="saturated"/>
     <transport state="on" />
-    <chemistry state="on" engine="crunchflow" input_filename="amanzi-test3.in" database="farea9.dbs"/>
+    <chemistry state="on" engine="crunchflow" input_filename="surfcomp.in" database="surfcomp.dbs"/>
   </process_kernels>
 
 <phases>
