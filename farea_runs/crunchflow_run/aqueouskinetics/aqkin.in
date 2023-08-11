@@ -1,0 +1,245 @@
+
+TITLE
+v6 trimmed input for use with Alquimia interface to Amanzi for ASCEM 2012 F-Area benchmark problem w/ full chemistry
+END
+
+RUNTIME
+time_units      years
+timestep_max    1.0
+timestep_init   1.E-10
+time_tolerance  0.01
+correction_max  1.0
+debye-huckel    true
+database        farea9.dbs
+!aqueousdatabase aqueous.dbs
+aqueousdatabase  aqueous.dbs
+master          H+
+speciate_only   false
+database_sweep  false
+screen_output   10
+graphics        tecplot
+gimrt           true
+hindmarsh       false
+duan            false
+END
+
+OUTPUT
+time_units               years
+spatial_profile          10 20 30 40 50
+END
+
+PRIMARY_SPECIES
+H+
+Al+++
+Ca++
+Cl-       
+Fe+++
+CO2(aq)
+K+        
+Mg++
+Na+
+SiO2(aq)
+SO4--
+Tritium
+NO3-
+UO2++
+!Sr++
+!Bogusite(aq)
+Daughter
+END
+
+SECONDARY_SPECIES 
+OH-
+HCO3-
+CO3--
+NaHCO3(aq)
+NaCO3-
+NaOH(aq)
+AlOH++
+Al(OH)2+
+Al(OH)3(aq)
+Al(OH)4-
+CaOH+
+CaHCO3+
+CaCO3(aq)
+MgOH+
+MgHCO3+
+MgCO3(aq)
+(UO2)2(OH)2++
+(UO2)2CO3(OH)3-
+(UO2)2OH+++
+(UO2)3(CO3)6(6-)
+(UO2)3(OH)4++
+UO2(OH)4--
+(UO2)3(OH)5+
+(UO2)3(OH)7-
+(UO2)3O(OH)2(HCO3)+
+(UO2)4(OH)7+
+UO2NO3+
+UO2OH+
+UO2(OH)2(aq)
+UO2(OH)3-
+UO2CO3(aq)
+UO2(CO3)2--
+UO2(CO3)3----
+CaUO2(CO3)3--
+Ca2UO2(CO3)3(aq)
+MgUO2(CO3)3--
+UO2OSi(OH)3+
+!SrCO3(aq)
+!SrHCO3+
+!SrCl+
+!SrOH+
+!SrSO4(aq)
+!SrNO3+
+END
+
+GASES
+CO2(g)
+END
+
+
+MINERALS
+Quartz       -label default    -rate  -13.345
+Goethite     -label default    -rate  -7.94
+Kaolinite    -label default    -rate  -12.967 
+Schoepite    -label default    -rate   0.301  
+Gibbsite     -label default    -rate  -11.5
+Jurbanite    -label default    -rate  -8.0
+Basaluminite -label default    -rate  -8.0
+Opal         -label default    -rate  -12.135
+!Bogusite           -rate  -35.00
+END
+
+AQUEOUS_KINETICS
+tritium_decay               -rate 0.05626194647
+END
+
+ION_EXCHANGE
+exchange X-
+! on Kaolinite
+convention Gaines-Thomas
+END
+
+!SURFACE_COMPLEXATION
+!>davis_OH on Bogusite  -no_edl 
+!END
+
+Condition initial
+units     mol/kg
+temperature  25.0
+SolidDensity     2700.0
+!set_porosity 0.25
+pH       5.4
+Al+++    Kaolinite
+Ca++     1.00e-5
+Cl-      charge
+Fe+++    Goethite
+CO2(aq)  CO2(g)  0.00101325
+K+       3.32e-5
+Mg++     5.35e-3
+Na+      2.78e-4
+SiO2(aq) Quartz
+SO4--    2.25e-5
+Tritium  1.0e-15
+NO3-     1.0e-3
+UO2++    1.25e-10
+Tracer   0.000
+Daughter         1.0e-15
+!Bogusite(aq)     0.1801
+!Bogusite         1.56199E-01  specific_surface_area  100.0 
+!Xkaol-     -cec   2.75
+X-       -cec    1.15833e-6 
+!>davis_OH 1.00E-06
+!<name of solid phase> <volume fraction> <surface area option> <value>
+!Mineral        <volume fraction>  <bulk surface area> m^2 /m^3
+    Quartz        0.88      specific_surface_area   32.6230
+    Goethite      0.016     specific_surface_area   110.7630
+    Kaolinite     0.11      specific_surface_area   590.9390
+    Schoepite     0.0       specific_surface_area   0.001   
+    Gibbsite      0.0       specific_surface_area   0.001
+    Jurbanite     0.0       specific_surface_area   0.001
+    Basaluminite  0.0       specific_surface_area   0.001
+    Opal          0.0       specific_surface_area   0.001
+END
+
+Condition west
+units     mol/kg
+temperature  25.0
+SolidDensity     2700.0
+!set_porosity 0.25
+pH       2.05
+!Concentrations total aqueous [mol/kg_h2o]
+Al+++    1.00d-8
+Ca++     1.00e-5
+Cl-      3.39e-5
+Fe+++    Goethite
+CO2(aq)  CO2(g)  0.00101325
+K+       1.72e-6
+Mg++     2.47e-6
+Na+      charge
+SiO2(aq) 1.18e-4
+SO4--    4.80e-5
+Tritium  2.17e-9
+NO3-     1.00e-2
+UO2++    3.01e-5
+Tracer   0.000
+Daughter         1.0e-15
+!Bogusite(aq)     0.1801
+!Bogusite         1.56199E-01  specific_surface_area  100.0
+!Xkaol-     -cec   2.75
+X-       -cec    1.15833e-6 
+!>davis_OH 1.00E-06
+!<name of solid phase> <volume fraction> <surface area option> <value>
+    Quartz        0.88      specific_surface_area   32.6230
+    Goethite      0.016     specific_surface_area   110.7630
+    Kaolinite     0.11      specific_surface_area   590.9390
+    Schoepite     0.0       specific_surface_area   0.001
+    Gibbsite      0.0       specific_surface_area   0.001
+    Jurbanite     0.0       specific_surface_area   0.001
+    Basaluminite  0.0       specific_surface_area   0.001
+    Opal          0.0       specific_surface_area   0.001
+END
+
+
+
+ 
+POROSITY
+fix_porosity     0.25      ! From farea-seepage.cfg
+porosity_update  false
+END
+ 
+TEMPERATURE
+set_temperature  25.0
+RunIsothermal   true
+END
+
+
+DISCRETIZATION
+distance_units  meters
+xzones 100      1.0
+END
+
+INITIAL_CONDITIONS
+initial     1-100
+END
+
+BOUNDARY_CONDITIONS
+X_begin   west     Flux
+X_end     initial  Flux
+END
+
+FLOW
+time_units      seconds
+distance_units  meters 
+constant_flow   7.9274479960d-9  ! m/s , from 1-dfarea-full.in
+END
+
+TRANSPORT
+distance_units meters
+time_units     second
+fix_diffusion  1.E-09 ! m2/s
+formation_factor  1.0  
+cementation_exponent  1.0
+dispersivity  0.0 0.0
+END
