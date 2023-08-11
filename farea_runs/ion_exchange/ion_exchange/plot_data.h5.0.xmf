@@ -1,0 +1,82 @@
+<Xdmf>
+  <Domain>
+    <Grid Name="Mesh">
+      <Topology Name="mixedtopo" NumberOfElements="100" TopologyType="Mixed">
+        <DataItem DataType="Int" Dimensions="900" Format="HDF">
+          plot_mesh.h5:/0/Mesh/MixedElements
+        </DataItem>
+      </Topology>
+      <Geometry Name="geo" Type="XYZ">
+        <DataItem DataType="Float" Dimensions="404  3" Format="HDF">
+          plot_mesh.h5:/0/Mesh/Nodes
+        </DataItem>
+      </Geometry>
+      <Time Value="0.00000000000000000e+00"/>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.1" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.1/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.2" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.2/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="hydraulic_head.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:hydraulic_head.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.1" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.1/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.2" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.2/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="porosity.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:porosity.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="pressure.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:pressure.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="prev_saturation_liquid.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:prev_saturation_liquid.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="saturation_liquid.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:saturation_liquid.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="specific_storage.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:specific_storage.cell.0/0
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="specific_yield.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:specific_yield.cell.0/0
+        </DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>
