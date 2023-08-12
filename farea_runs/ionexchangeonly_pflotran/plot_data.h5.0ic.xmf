@@ -1,0 +1,367 @@
+<Xdmf>
+  <Domain>
+    <Grid Name="Mesh">
+      <Topology Name="mixedtopo" NumberOfElements="100" TopologyType="Mixed">
+        <DataItem DataType="Int" Dimensions="900" Format="HDF">
+          plot_mesh.h5:/0/Mesh/MixedElements
+        </DataItem>
+      </Topology>
+      <Geometry Name="geo" Type="XYZ">
+        <DataItem DataType="Float" Dimensions="404  3" Format="HDF">
+          plot_mesh.h5:/0/Mesh/Nodes
+        </DataItem>
+      </Geometry>
+      <Time Value="0.00000000000000000e+00"/>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.1" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.1/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="darcy_velocity.cell.2" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:darcy_velocity.cell.2/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="hydraulic_head.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:hydraulic_head.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="ion_exchange_sites.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:ion_exchange_sites.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mass_density_liquid.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mass_density_liquid.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Quartz min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Quartz min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Goethite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Goethite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Kaolinite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Kaolinite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Schoepite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Schoepite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Gibbsite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Gibbsite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Jurbanite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Jurbanite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Basaluminite min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Basaluminite min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_rate_constant.cell.Opal min rate cnst" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_rate_constant.cell.Opal min rate cnst/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Basaluminite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Basaluminite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Gibbsite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Gibbsite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Goethite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Goethite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Jurbanite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Jurbanite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Kaolinite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Kaolinite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Opal.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Opal.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Quartz.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Quartz.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_saturation_index_Schoepite.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_saturation_index_Schoepite.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Quartz vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Quartz vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Goethite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Goethite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Kaolinite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Kaolinite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Schoepite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Schoepite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Gibbsite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Gibbsite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Jurbanite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Jurbanite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Basaluminite vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Basaluminite vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="mineral_volume_fractions.cell.Opal vol frac" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:mineral_volume_fractions.cell.Opal vol frac/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="pH.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:pH.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.1" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.1/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="permeability.cell.2" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:permeability.cell.2/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="porosity.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:porosity.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="pressure.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:pressure.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="prev_saturation_liquid.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:prev_saturation_liquid.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="saturation_liquid.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:saturation_liquid.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="sorption_sites.cell.>davis_OH sorption site" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:sorption_sites.cell.>davis_OH sorption site/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="specific_storage.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:specific_storage.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="specific_yield.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:specific_yield.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="surface_complex_free_site_conc.cell.>davis_OH surface complex free site conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:surface_complex_free_site_conc.cell.>davis_OH surface complex free site conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.H+ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.H+ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Al+++ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Al+++ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Ca++ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Ca++ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Cl- conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Cl- conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Fe+++ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Fe+++ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.CO2(aq) conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.CO2(aq) conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.K+ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.K+ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Mg++ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Mg++ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Na+ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Na+ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.SiO2(aq) conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.SiO2(aq) conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.SO4-- conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.SO4-- conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.Tritium conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.Tritium conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.NO3- conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.NO3- conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_component_concentration.cell.UO2++ conc" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_component_concentration.cell.UO2++ conc/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.0" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.0/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.1" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.1/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.2" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.2/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.3" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.3/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.4" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.4/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.5" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.5/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.6" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.6/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.7" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.7/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.8" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.8/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.9" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.9/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.10" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.10/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.11" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.11/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.12" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.12/0ic
+        </DataItem>
+      </Attribute>
+      <Attribute Center="Cell" Name="total_sorbed.cell.13" Type="Scalar">
+        <DataItem DataType="Float" Dimensions="100" Format="HDF">
+          plot_data.h5:total_sorbed.cell.13/0ic
+        </DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>
