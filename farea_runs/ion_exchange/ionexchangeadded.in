@@ -136,7 +136,7 @@ NO3-     1.0e-3
 UO2++    1.25e-10
 Tracer   0.000
 !Xkaol-     -cec   2.75
-X-       -cec     1.15833e-6
+X-       -cec     0.00000135844484
 !>davis_OH 1.00E-06
 !<name of solid phase> <volume fraction> <surface area option> <value>
 !Mineral        <volume fraction>  <bulk surface area> m^2 /m^3
@@ -172,7 +172,7 @@ NO3-     1.00e-2
 UO2++    3.01e-5
 Tracer   0.000
 !Xkaol-     -cec   2.75
-X-       -cec     1.15833e-6
+X-       -cec     0.00000135844484
 !>davis_OH 1.00E-06
 !<name of solid phase> <volume fraction> <surface area option> <value>
     Quartz        0.88      specific_surface_area   32.6230
